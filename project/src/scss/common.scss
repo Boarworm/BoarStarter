@@ -1,0 +1,8 @@
+// Comment next line if you no need Foundation framework
+//@import "../foundation/app.scss";
+
+@import "mixins/font-face";
+
+// Usage: @include font-face(Samplinal, fonts/Samplinal, 500, normal, eot woff2 woff);
+// Set null if you no need font type
+@include font-face(UniSans, '../fonts/UniSans');

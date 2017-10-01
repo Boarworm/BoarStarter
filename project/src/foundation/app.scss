@@ -1,4 +1,9 @@
-@import '../../bower_components/foundation-sites/scss/settings/_settings.scss';
+/* Import default Foundation 6 _settings.scss */
+//@import '../../bower_components/foundation-sites/scss/settings/_settings.scss';
+
+/* Import custom _settings.scss with some modifications */
+@import '_settings.scss';
+
 @import '../../bower_components/foundation-sites/scss/foundation.scss';
 
 @include foundation-global-styles;

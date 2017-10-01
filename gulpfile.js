@@ -76,19 +76,18 @@ gulp.task('scss-style', function () {
 // ---------------------------------------------------
 // Foundation
 // ---------------------------------------------------
-var sassPaths = [
-    'bower_components/normalize.scss/sass',
-    'bower_components/foundation-sites/scss',
-    'bower_components/motion-ui/src'
-];
+// var sassPaths = [
+//     'bower_components/normalize.scss/sass',
+//     'bower_components/foundation-sites/scss',
+//     'bower_components/motion-ui/src'
+// ];
 gulp.task('foundation', function () {
     return gulp.src('scss/app.scss')
         .pipe(sass({
-            includePaths: sassPaths,
+            // includePaths: sassPaths,
             outputStyle: 'compressed' // if css compressed **file size**
-        })
-            .on('error', sass.logError))
-        .pipe(gulp.dest('dist/foundation'));
+        }).on('error', sass.logError))
+        .pipe(gulp.dest('dist/libs/'));
 });
 // ---------------------------------------------------
 // File include

@@ -10,7 +10,7 @@ var gulp = require('gulp'),
     autoPrefixer = require('autoprefixer'),
     discardComments = require('postcss-discard-comments'),
     postcssSorting = require('postcss-sorting'),
-    realFavicon = require('gulp-real-favicon'),
+    // realFavicon = require('gulp-real-favicon'),
     rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps');
 
@@ -38,7 +38,33 @@ var gulp = require('gulp'),
 //     gulp.watch(['scss/**/*.scss'], ['sass']);
 // });
 
+// ---------------------------------------------------
+// Debug
+// ---------------------------------------------------
+/**
+ * Wrap gulp streams into fail-safe function for better error reporting
+ * Usage:
+ * gulp.task('less', wrapPipe(function(success, error) {
+ *   return gulp.src('less/*.less')
+ *      .pipe(less().on('error', error))
+ *      .pipe(gulp.dest('app/css'));
+ * }));
+ */
 
+function wrapPipe(taskFn) {
+    return function(done) {
+        var onSuccess = function() {
+            done();
+        };
+        var onError = function(err) {
+            done(err);
+        };
+        var outStream = taskFn(onSuccess, onError);
+        if(outStream && typeof outStream.on === 'function') {
+            outStream.on('end', onSuccess);
+        }
+    }
+}
 // ---------------------------------------------------
 // Scss
 // ---------------------------------------------------
@@ -81,8 +107,9 @@ gulp.task('scss-style', function () {
 //     'bower_components/foundation-sites/scss',
 //     'bower_components/motion-ui/src'
 // ];
+
 gulp.task('foundation', function () {
-    return gulp.src('scss/app.scss')
+    return gulp.src('src/scss/app.scss')
         .pipe(sass({
             // includePaths: sassPaths,
             outputStyle: 'compressed' // if css compressed **file size**

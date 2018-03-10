@@ -1,0 +1,50 @@
+.menu {
+  &__nav {
+    height: 100%;
+    display: flex;
+  }
+  &__ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  &__li {
+    display: flex;
+    list-style: none;
+    position: relative;
+    &:not(:last-child) {
+
+    }
+  }
+  &__a {
+    transition: 0.3s;
+    text-align: center;
+    &:hover + .menu__child-ul{
+        display: flex;
+      }
+
+  }
+  &__child-ul {
+    position: absolute;
+    /* left: 0; */
+    top: 100%;
+    margin: 0;
+    z-index: 9;
+    background: #42a5f5;
+    width: 100%;
+    flex-wrap: wrap;
+    display: none;
+  }
+  &__child-li {
+    list-style: none;
+    width: 25%;
+  }
+  &__child-a {
+  }
+}
+
+
+
+
+
+

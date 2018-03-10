@@ -1,0 +1,12 @@
+.rating-stars{
+
+  &__star{
+    color: $color-orange-400;
+    &:not(:last-child){
+
+    }
+  }
+  &__star--active{
+    color: $color-orange-400;
+  }
+}

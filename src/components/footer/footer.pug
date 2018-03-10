@@ -1,0 +1,73 @@
+footer.footer.bg-grey-800
+	.grid-x.grid-container.p-t-25.p-b-25
+		.footer__item.cell.xlarge-6.grid-x.align-center
+			+link-tel({
+				tel: "+38 (099) 56-95-56", linkClass: "m-b-10", iconClass: ""
+			})
+			+link-mailto('aaa@ya.ru','','fa fa-envelope-o')
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--footer m-b-10",
+				href: "",
+				text: "Заказать звонок",
+				title: "Заказать звонок",
+				iconClass: "",
+				iconPosition: ""
+			})
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--footer m-b-10",
+				href: "",
+				text: "Оставить заявку",
+				title: "Оставить заявку",
+				iconClass: "",
+				iconPosition: ""
+			})
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--footer m-b-10",
+				href: "",
+				text: "Прайс-лист онлайн",
+				title: "Прайс-лист онлайн",
+				iconClass: "",
+				iconPosition: ""
+			})
+
+		.footer-block.cell.xlarge-6
+			.footer__title О компании
+			ul.footer__list
+				- var n = 1;
+				while n < 5
+					li.footer__list-item
+						a.footer__list-link(href="" title="Горные велосипеды") Оплата и доставка
+					- n++;
+		.footer-block.cell.xlarge-6
+			.footer__title Велосипеды
+			ul.footer__list
+				- var n = 1;
+				while n < 5
+					li.footer__list-item
+						a.footer__list-link(href="" title="Горные велосипеды") Городские велосипеды
+					- n++;
+		.footer-block.cell.xlarge-6
+			.footer__title Велосипеды
+			ul.footer__list
+				- var n = 1;
+				while n < 5
+					li.footer__list-item
+						a.footer__list-link(href="" title="Горные велосипеды") Дорожные велосипеды
+					- n++;
+	include ../copyright/copyright
++to-top-btn()
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+//link(rel="stylesheet" href="/static/css/separate-css/fontawesome-all.min.css")
+link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css")
+<script src="/js/scripts.js"></script>

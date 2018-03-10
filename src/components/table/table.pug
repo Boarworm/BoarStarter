@@ -1,0 +1,11 @@
+mixin table(opt,data)
+	- var classes = opt.classes ? "table " + opt.classes:"table";
+	- var data = data;
+
+	.table-wrapper
+		table(class=classes)
+			thead.table__thead
+				each tableRow in data
+					tr.table__row
+						td.table__cell=tableRow.heading
+						td.table__cell=tableRow.value

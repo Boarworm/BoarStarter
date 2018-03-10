@@ -1,0 +1,28 @@
+.footer {
+  background-color: #424242;
+  background-image: url(https://www.transparenttextures.com/patterns/diagmonds.png);
+
+  &__title {
+    color: $color-white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+  }
+  &__list {
+    margin: 0;
+    &-item {
+      list-style: none;
+    }
+    &-link {
+      color: $color-white;
+      &:hover {
+        text-decoration: underline;
+        color: $color-white;
+      }
+      &:focus {
+        text-decoration: underline;
+        color: $color-white;
+      }
+    }
+  }
+}

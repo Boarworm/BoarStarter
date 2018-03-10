@@ -1,0 +1,56 @@
+mixin product-card(opt)
+	- var cardClass = opt.cardClass;
+	- var img = opt.img;
+	- var heading = opt.heading;
+	- var priceOld = opt.priceOld;
+	- var priceNew = opt.priceNew;
+	- var text = opt.text;
+	- var href = opt.href;
+	- var buttonText = opt.buttonText;
+
+	.product-card(class=cardClass)
+		a.product-card__img-container(href=href title=heading)
+			img.product-card__img(src=img alt=heading title=heading)
+		.product-card__body()
+			a.product-card__heading(href=href title=heading)=heading
+			if text
+				.product-card__text()=text
+			.product-card__info
+				.product-card__buttons
+					+button({
+						tag: "",
+						type: "",
+						buttonClass: "button--product-card-favorite",
+						href: "",
+						text: "",
+						title: "Избранное",
+						iconClass: "fas fa-heart",
+						iconPosition: "left"
+					})
+					+button({
+						tag: "",
+						type: "",
+						buttonClass: "button--product-card-compare",
+						href: "",
+						text: "",
+						title: "Добавить к сравнению",
+						iconClass: "fas fa-flask",
+						iconPosition: "left"
+					})
+				.product-card__price
+					.product-card__price-old()=priceOld
+					.product-card__price-new()=priceNew
+			.product-card__rating
+				+rating-stars({classes:"m-b-10", starsCount : "5",starsActive:"2",starIcon:"fas fa-star",starIconActive:"far fa-star",title:"Оценка"})
+				+reviews({classes:"m-b-10", icon : "fas fa-comment",href:"#",count:"4",text:"отзыва"})
+			+label({labelClass:"label--product-card",href:"#",text:"Скидка -42%"})
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--product-card m-b-5",
+				href: "",
+				text: buttonText,
+				title: "Купить",
+				iconClass: "fa fa-shopping-cart",
+				iconPosition: "left"
+			})

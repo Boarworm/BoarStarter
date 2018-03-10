@@ -1,0 +1,12 @@
+.reviews {
+  display: inline-flex;
+  flex-direction: row;
+  &__icon {
+    margin: 0 4px 0 0;
+  }
+  &__count {
+    margin: 0 4px 0 0;
+  }
+  &__count {
+  }
+}

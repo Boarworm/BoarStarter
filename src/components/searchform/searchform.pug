@@ -1,0 +1,13 @@
+mixin searchform(opt)
+	- var formClass = opt.formClass ? "search-form " + opt.formClass:"search-form";
+	- var action = opt.action;
+	- var placeholder = opt.placeholder;
+	- var btnText = opt.btnText;
+	- var btnIcon = opt.btnIcon;
+
+	form(class=formClass action=action)
+		input.search-form__input(type="text" title=placeholder placeholder=placeholder)
+		button.search-form__submit(type="submit")
+			if btnIcon
+				span.search-form__submit-icon(class=btnIcon)
+			=btnText

@@ -1,0 +1,13 @@
+mixin pagination(opt)
+	- var classes = opt.classes ? "pagination " + opt.classes:"pagination";
+	- var countPages = opt.countPages;
+	- var activePage = opt.activePage;
+	- var counter = 1;
+
+	div(class=classes)
+		while counter <= countPages
+			if counter == activePage
+				a.pagination__item.pagination__item--active(href="#" title="Страница "+counter)=counter
+			else
+				a.pagination__item(href="#" title="Страница "+counter)=counter
+			- counter++;

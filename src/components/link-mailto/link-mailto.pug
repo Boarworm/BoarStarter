@@ -1,0 +1,10 @@
+mixin link-mailto(opt)
+	- var email = opt.email;
+	- var title = opt.title;
+	- var linkClass = opt.linkClass ? "link-mailto " + opt.linkClass:"link-mailto";
+	- var iconClass = opt.iconClass ? "link-mailto__icon " + opt.iconClass:"link-mailto__icon";
+
+	a(href="mailto:" + email class=linkClass title=title)
+		if iconClass
+			span(class=iconClass)
+		=email

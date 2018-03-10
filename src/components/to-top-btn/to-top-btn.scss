@@ -1,0 +1,19 @@
+.to-top-btn{
+  bottom: 30px;
+  height: 30px;
+  position: fixed;
+  right: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1084c2;
+  border-radius: 3px;
+  cursor: pointer;
+  &:before{
+    content: '^';
+  }
+  &:hover{
+    background: #2473c2;
+  }
+}

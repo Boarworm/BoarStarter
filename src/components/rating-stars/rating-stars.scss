@@ -1,0 +1,12 @@
+.rating-stars{
+  display: inline-flex;
+  flex-direction: row;
+  &__star{
+    &:not(:last-child){
+      margin: 0 1px 0 0;
+    }
+  }
+  &__star--active{
+
+  }
+}

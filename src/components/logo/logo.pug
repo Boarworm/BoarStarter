@@ -1,0 +1,12 @@
+mixin logo(opt)
+	- var logoClass = opt.logoClass ? "logo " + opt.logoClass:"logo";
+	- var img = opt.img;
+	- var text = opt.text;
+	- var title = opt.title;
+
+	div(class=logoClass)
+		a.logo__img-block(href="/" title=title)
+			img.logo__img(src=img, alt=title title=title)
+		if text
+			a.logo__text(href="/", title=title)
+				=text

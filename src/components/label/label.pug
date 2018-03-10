@@ -1,0 +1,6 @@
+mixin label(opt)
+	- var text = opt.text;
+	- var href = opt.href;
+	- var labelClass = opt.labelClass ? "label " + opt.labelClass:"label";
+
+	a(class=labelClass href=href title=text)=text

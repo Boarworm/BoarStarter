@@ -1,0 +1,6 @@
+mixin select(opt,data)
+	- var classes = opt.classes ? "select " + opt.classes:"select";
+	div(class=classes)
+		select.select__input
+			each option in data
+				option(value=option)=option

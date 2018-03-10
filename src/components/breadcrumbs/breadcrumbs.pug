@@ -1,0 +1,28 @@
+mixin breadcrumbs(opt,data)
+	- var breadcrumbsClass = opt.breadcrumbsClass ? "breadcrumbs " + opt.breadcrumbsClass:"breadcrumbs";
+	- var delimeter = opt.delimeter;
+	- var delimeterClass = opt.delimeterClass ? "breadcrumbs__delimeter " + opt.delimeterClass:"breadcrumbs__delimeter";
+	- var currentItemClass = 'breadcrumbs__item--current';
+	- var homeItemClass = 'breadcrumbs__item--home';
+	- var counter = 1;
+	//- var data = data;
+
+	div(class=breadcrumbsClass)
+		ul.breadcrumbs__list
+			each crumb in data
+
+				if counter === 0
+					li.breadcrumbs__item(itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class=homeItemClass)
+						a.breadcrumbs__link(itemprop="url" href="#" title=crumb.title)
+							span.breadcrumbs__text(itemprop="title")=crumb.text
+						span(class=delimeterClass)=delimeter
+				else if counter === Object.keys(data).length
+					li.breadcrumbs__item(itemscope itemtype="http://data-vocabulary.org/Breadcrumb" class=crumb.current ? currentItemClass : '')
+						span.breadcrumbs__link(itemprop="url" href="#" title=crumb.title)
+							span.breadcrumbs__text(itemprop="title")=crumb.text
+				else
+					li.breadcrumbs__item(itemscope itemtype="http://data-vocabulary.org/Breadcrumb" )
+						a.breadcrumbs__link(itemprop="url" href="#" title=crumb.title)
+							span.breadcrumbs__text(itemprop="title")=crumb.text
+						span(class=delimeterClass)=delimeter
+				- counter++;

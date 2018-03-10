@@ -1,0 +1,25 @@
+mixin menu(opt, data)
+	- const tag = opt.tag ? opt.tag : "nav";
+	- const menuClass = opt.menuClass ? "menu " + opt.menuClass:"menu";
+	- const navClass = opt.navClass ? "menu__nav " + opt.navClass:"menu__nav";
+	- const ulClass = opt.ulClass ? "menu__ul " + opt.ulClass:"menu__ul";
+	- const liClass = opt.liClass ? "menu__li " + opt.liClass:"menu__li";
+	- const liClassActive = opt.liClassActive + " menu__li--active";
+	- const aClass = opt.aClass ? "menu__a " + opt.aClass:"menu__a";
+	- const childUlClass = opt.childUlClass ? "menu__child-ul " + opt.childUlClass:"menu__child-ul";
+	- const childLiClass = opt.childLiClass ? "menu__child-li " + opt.childLiClass:"menu__child-li";
+	- const childAClass = opt.childAClass ? "menu__child-a " + opt.childAClass:"menu__child-a";
+	- var data = data;
+
+	div(class=menuClass)
+		#{tag}(class=navClass)
+			ul(class=ulClass)
+				each item in data
+					li(class=liClass+liClassActive)
+						a(class=aClass href=item.href title=item.title)=item.text
+						if item.childs
+							ul(class=childUlClass)
+								each childItem in item.childs
+									li(class=childLiClass)
+										a(class=childAClass href=childItem.href title=childItem.title)=childItem.text
+

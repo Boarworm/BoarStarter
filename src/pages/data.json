@@ -1,0 +1,131 @@
+{
+    "menu": {
+        "mainMenu": {
+            "item1": {
+                "href": "#", "text": "Главная", "title": "Главная", "current": "", "childs": {
+                }
+            }, "item2": {
+                "href": "#", "text": "Оплата и доставка", "title": "Оплата и доставка", "childs": {
+                }
+            }, "item3": {
+                "href": "#", "text": "Гарантия и возврат", "title": "Гарантия и возврат", "childs": {
+
+                }
+            }, "item4": {
+                "href": "#", "text": "Контакты", "title": "Контакты", "childs": {
+
+                }
+            }
+        },
+        "additionalMenu": {
+            "item1": {
+                "href": "#", "text": "Велосипеды", "title": "Велосипеды", "childs":{
+                    "item1": {
+                        "href": "#", "text": "Горные", "title": "Горные", "current": "", "childs": {}
+                    }, "item2": {
+                        "href": "#", "text": "Двухподвесы", "title": "Двухподвесы", "childs": {}
+                    }, "item3": {
+                        "href": "#", "text": "Найнеры (29 дюймов)", "title": "Найнеры (29 дюймов)", "childs": {}
+                    }, "item4": {
+                        "href": "#", "text": "Гибридные кроссовые", "title": "Гибридные кроссовые", "childs": {}
+                    }, "item5": {
+                        "href": "#", "text": "Городские", "title": "Городские", "childs": {}
+                    }, "item6": {
+                        "href": "#", "text": "Туристические", "title": "Туристические", "childs": {}
+                    }, "item7": {
+                        "href": "#", "text": "Кросс-кантри", "title": "Кросс-кантри", "childs": {}
+                    }, "item8": {
+                        "href": "#", "text": "Круизеры (супер-комфортные)", "title": "Круизеры (супер-комфортные)", "childs": {}
+                    }, "item9": {
+                        "href": "#", "text": "Фэтбайки", "title": "Фэтбайки", "childs": {}
+                    }, "item10": {
+                        "href": "#", "text": "Электровелосипеды", "title": "Электровелосипеды", "childs": {}
+                    }, "item11": {
+                        "href": "#", "text": "Складные", "title": "Складные", "childs": {}
+                    }, "item12": {
+                        "href": "#", "text": "Шоссейные", "title": "Шоссейные", "childs": {}
+                    }, "item13": {
+                        "href": "#", "text": "Фиксы (fixed gear)", "title": "Фиксы (fixed gear)", "childs": {}
+                    }
+                }
+            }
+        }
+    },
+    "slider": {
+        "homePageMainSlider": {
+            "slide1": {
+                "text": "slide 1 text",
+                "link": "#",
+                "image": "img/content/slide1.jpg"
+            },
+            "slide2": {
+                "text": "slide 2 text",
+                "link": "#",
+                "image": "img/content/slide2.jpg"
+            }
+        },
+        "homePagePopular" : {
+            "slide1": {
+                "text": "+category-item('Двухподвесы','small-3', 'img/general/dvuhpodvesy.jpg')",
+                "link": "#",
+                "image": "http://via.placeholder.com/700x400"
+            },
+            "slide2": {
+                "text": "slide 2 text",
+                "link": "#",
+                "image": "http://via.placeholder.com/700x400"
+            },
+            "slide3": {
+               "text": "slide 3 text",
+               "link": "#",
+               "image": "http://via.placeholder.com/700x400"
+            },
+            "slide4": {
+                "text": "slide 4 text",
+                "link": "#",
+                "image": "http://via.placeholder.com/700x400"
+            },
+            "slide5": {
+                "text": "slide 5 text",
+                "link": "#",
+                "image": "http://via.placeholder.com/700x400"
+            }
+        }
+    },
+    "table": {
+        "tableRow1":{
+            "heading":"Год",
+            "value":"2018"
+        },
+        "tableRow2":{
+            "heading":"Серия",
+            "value":"Seet HardNine"
+        },
+        "tableRow3":{
+            "heading":"Вес",
+            "value":"14,7 кг"
+        },
+        "tableRow4":{
+            "heading":"Тип велосипеда",
+            "value":"Горные"
+        },
+        "tableRow5":{
+            "heading":"Диаметр колеса",
+            "value":"29"
+        },
+        "tableRow6":{
+            "heading":"Тип задней втулки",
+            "value":"Кассетная"
+        }
+    },
+    "head": {
+        "defaults": {
+            "title": "default title",
+            "useSocialMetaTags": true
+        },
+        "index" : {
+            "title" : "Главная страница",
+            "useSocialMetaTags": true
+        }
+    }
+}

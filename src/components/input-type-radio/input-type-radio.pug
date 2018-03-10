@@ -1,0 +1,7 @@
+//
+mixin input-type-radio(inputName, labelText)
+    .input-type-radio
+        input.input-type-radio__input(type="radio" id="radioButton" name=inputName)
+        - empty = labelText ? '' : 'input-type-radio__label_empty'
+        label.input-type-radio__label(class=empty)
+            =labelText

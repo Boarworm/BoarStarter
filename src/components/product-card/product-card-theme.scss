@@ -1,0 +1,34 @@
+.product-card{
+  box-shadow: 0 0 1px 0 $color-grey-light;
+  background-color: $color-white;
+  &--slider{
+
+  }
+  &__img-container{
+
+  }
+  &__img{
+
+  }
+  &__heading{
+
+  }
+  &__price{
+
+  }
+  &__price-old{
+    font-size: 17px;
+    text-decoration: line-through;
+    color: #808080;
+  }
+
+  &__price-new{
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__text{}
+  // mods
+  &--slider{
+
+  }
+}

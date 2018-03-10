@@ -1,0 +1,62 @@
+{#{{ include('/var/www/public/starter/project/src/blocks/menu/data.json') }}#}
+{#{% include "data.js" %}#}
+    {#{% include "data.json" with data %}#}
+    {#{{ dump(data) }}#}
+    {#{% json_decode(data,true) %}#}
+{#this menu#}
+
+{% macro menu(options) %}
+    {% set data %}
+        {% include "data.json" %}
+     {% endset %}
+
+    {{ dump(data) }}
+    {%
+    set defaults = {
+    'data': 'default Data',
+    'tag': 'default Tag',
+    'navClasses': 'default navClasses',
+    }
+    %}
+    {% set options = defaults|merge(options) %}
+    {#{{ dump(options) }}#}
+
+    {#{% include "data.js" with data %}#}
+    <{{ tag|default("nav") }} class="nav {{ navClasses }}">
+        <ul class="nav__list {{ options.ulClasses }}">
+            {% for item in options  %}
+
+                {#{{ dump(_context.item) }}#}
+                {#{{ dump(item.link) }}#}
+                {#{{ dump(_self.item.link) }}#}
+                <li class="nav__item {{ liClasses }}">
+                    <a class="nav__link {{ aClasses }}" href="{{ item.link|default('#') }}" title="{{ _self.item.title|default('title') }}">{{ item.value }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </{{ tag|default("nav") }}>
+{% endmacro %}
+
+
+{#----------------------#}
+{#Btw @c4grey you can sorta do this by passing a hash, as ninsuo showed in that thread:#}
+
+ {#main.twig#}
+{#{% import 'macros.twig' as test %}#}
+{#{{#}
+{#test.myMacro({#}
+    {#'hello': 'world',#}
+{#})#}
+{#}}#}
+
+ {#macros.twig#}
+{#{% macro myMacro(options) %}#}
+    {#{%#}
+    {#set defaults = {#}
+    {#'hello': 'bob',#}
+    {#'foo': 'bar',#}
+    {#}#}
+    {#%}#}
+    {#{% set options = defaults|merge(options) %}#}
+    {#{{ options.hello }} {{ options.foo }}#}
+{#{% endmacro %}#}

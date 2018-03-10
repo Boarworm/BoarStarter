@@ -1,0 +1,13 @@
+{
+  "header": {
+    "name": "Вася",
+    "age": 35,
+    "isAdmin": false,
+    "friends": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

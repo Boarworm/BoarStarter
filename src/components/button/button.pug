@@ -1,0 +1,16 @@
+mixin button(opt)
+	- const tag = opt.tag ? opt.tag : "a";
+	- const type = opt.type;
+	- const buttonClass = "button "+opt.buttonClass;
+	- const href = opt.href;
+	- const text = opt.text;
+	- const title = opt.title;
+	- const iconClass = "button__icon "+opt.iconClass;
+	- const iconPosition = opt.iconPosition ? " button--icon-"+opt.iconPosition : '';
+
+
+	#{tag}(type=(type ? type : null) class=buttonClass+iconPosition href=(href ? href : null) title=(title ? title : null))
+		if (iconClass && iconPosition)
+			i(class=iconClass)
+		=text
+

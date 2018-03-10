@@ -1,0 +1,37 @@
+header.header
+	include ../top-line/top-line.pug
+	.grid-container.p-t-15.p-b-15
+		.grid-x.grid-margin-x.align-middle.align-justify
+			.cell.text-center.xlarge-shrink
+				+logo({
+				logoClass: "", img: "img/general/logo.png", text: "", title: "Продажа велосипедов"
+			})
+			.cell.align-center.xlarge-auto
+				+searchform({
+					formClass: "",
+					action: "#",
+					placeholder: "Найти велосипед",
+					btnText: "Найти",
+					btnIcon: "fa fa-search"
+				})
+			.cell.grid-y.text-center.xlarge-shrink.xlarge-text-left
+				+link-tel({
+					tel: "+38 (099) 56-95-56", linkClass: "link-tel--header m-b-5", iconClass: "fas fa-phone-volume",title:"Звоните по телефону +38 (099) 56-95-56"
+				})
+				+link-tel({
+					tel: "+38 (099) 56-95-56", linkClass: "link-tel--header m-b-5", iconClass: "fas fa-phone-volume",title:"Звоните по телефону +38 (099) 56-95-56"
+				})
+				+link-tel({
+					tel: "+38 (099) 56-95-56", linkClass: "link-tel--header m-b-5", iconClass: "fas fa-phone-volume",title:"Звоните по телефону +38 (099) 56-95-56"
+				})
+				+link-mailto({
+					email:"veliki@gmail.com",
+					linkClass:"link-mailto--header",
+					iconClass:"fas fa-phone-volume",title:"Пишите на почту veliki@gmail.com"
+				})
+	.bg-color-five
+		.grid-container
+			+menu({
+				tag: "", menuClass: "", navClass: "", ulClass: "", liClass: "", liClassActive: "", aClass: ""
+			},
+			menu.additionalMenu)

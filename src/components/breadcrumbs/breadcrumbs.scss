@@ -1,0 +1,33 @@
+/*!*** BEGIN Breadcrumbs ***/
+.breadcrumbs {
+  &__list{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+  }
+  &__item {
+    list-style: none;
+    &--home {
+
+    }
+    &--current {
+
+    }
+  }
+  &__link {
+    position: relative;
+    display: inline-block;
+    &:before{
+
+    }
+    &:after{
+
+    }
+  }
+  &__delimeter{
+    display: inline-flex;
+    padding: 0 4px;
+  }
+}
+
+/*!*** END Breadcrumbs ***/

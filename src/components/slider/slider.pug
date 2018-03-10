@@ -1,0 +1,9 @@
+mixin slider(data,classes)
+	div(class=classes)
+		if block
+			block sliderRaw
+		else
+			each slide in data
+				=index
+				a(href=slide.link class="slider__slide")
+					img(src=slide.image alt="" class="slider__slide-img" title="")

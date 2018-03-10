@@ -1,0 +1,11 @@
+.table{
+  table-layout: fixed;
+  width: 100%;
+  min-width: 700px;
+  border-collapse: collapse;
+  &__row{}
+  &__cell{
+    border: 1px $color-grey-light solid;
+    padding: 5px;
+  }
+}

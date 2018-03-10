@@ -1,0 +1,7 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__item{padding: 4px 10px}
+  &__item--active{}
+}

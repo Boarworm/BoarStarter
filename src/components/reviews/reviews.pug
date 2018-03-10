@@ -1,0 +1,11 @@
+mixin reviews(opt)
+	- var classes = opt.classes ? "reviews " + opt.classes:"reviews";
+	- var icon = opt.icon;
+	- var href = opt.href;
+	- var count = opt.count;
+	- var text = opt.text;
+
+		a(class=classes href=href title="Отзывы о товаре")
+			span.reviews__icon(class=icon)
+			span.reviews__count=count
+			span.reviews__text=text

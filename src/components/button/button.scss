@@ -1,0 +1,65 @@
+/**
+* Button global styles
+*/
+
+.button {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+  vertical-align: top;
+  cursor: pointer;
+  -webkit-appearance: none;
+  /**
+  * Button states
+  */
+  &:hover {
+
+  }
+  &:focus {
+    outline: none;
+  }
+  &:active {
+
+  }
+  /**
+  * Button icon
+  */
+  &__icon {
+    font-size: 20px;
+  }
+
+  /**
+  * Button modifications
+  */
+  //&_rounded {
+  //  border-radius: 50px;
+  //}
+  &--icon-top {
+    flex-direction: column;
+    .button__icon {
+      margin-bottom: 4px;
+    }
+  }
+  &--icon-right {
+    flex-direction: row-reverse;
+    .button__icon {
+      margin-left: 4px;
+    }
+  }
+  &--icon-bottom {
+    flex-direction: column-reverse;
+    .button__icon {
+      margin-top: 4px;
+    }
+  }
+  &--icon-left {
+    flex-direction: row;
+    .button__icon {
+      margin-right: 4px;
+    }
+  }
+}

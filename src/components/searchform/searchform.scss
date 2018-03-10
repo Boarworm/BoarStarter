@@ -1,0 +1,39 @@
+.search-form {
+  position: relative;
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  &__input {
+    margin: 0;
+    padding: 10px 5px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    border-right: 0;
+    transition: 0.3s;
+    width: 100%;
+    &:focus{
+      outline: none;
+  //    border-color: $color2;
+    }
+  }
+  &__submit {
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+  //  background: $color2;
+    padding: 4px;
+    flex-shrink: 0;
+    //border-radius: 0 4px 4px 0;
+    transition: 0.3s;
+  //  border: 1px $color1 solid;
+    &:hover{
+
+    }
+    &:focus{
+      outline: none;
+    }
+    &-icon{
+      margin: 0 4px 0 0;
+    }
+  }
+}

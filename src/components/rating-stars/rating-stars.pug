@@ -1,0 +1,17 @@
+mixin rating-stars(opt)
+	- var classes = opt.classes ? "rating-stars " + opt.classes:"rating-stars";
+	- var starsCount = opt.starsCount;
+	- var starsActive = opt.starsActive;
+	- var starIcon = opt.starIcon;
+	- var starIconActive = opt.starIconActive;
+	- var title = opt.title;
+
+	- var index = 0;
+
+	div(class=classes)
+		while index < starsCount
+			if index < starsActive
+				.rating-stars__star.rating-stars__star--active(class=starIcon title=title+" "+starsActive)
+			else
+				.rating-stars__star(class=starIconActive title=title+" "+starsActive)
+			- index++;

@@ -1,0 +1,12 @@
+mixin category-card(opt)
+	- var cardClass = opt.cardClass;
+	- var img = opt.img;
+	- var heading = opt.heading;
+	- var text = opt.text;
+	- var href = opt.href;
+
+	.category-card(class=cardClass)
+		a.category-card__img-container(href=href title=heading)
+			img.category-card__img(src=img alt=heading title=heading)
+		a.category-card__heading(href=href title=heading)=heading
+		.category-card__text=text

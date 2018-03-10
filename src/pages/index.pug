@@ -1,0 +1,141 @@
+extends layout.pug
+block main
+	+slider(slider.homePageMainSlider,'js-main-page-slider')
+	.grid-container
+		.content.m-t-20.m-b-20
+			p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		.h2 Каталог велосипедов
+	.container-1920
+		.align-justify.grid-x
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/gornye-velosipedy.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/velosipedy-kross-kantri.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/nainery-29-dyuimov.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/gibridnye-krossovye.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/gornye-velosipedy.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/velosipedy-kross-kantri.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/nainery-29-dyuimov.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+			+category-card({
+				cardClass: "cell medium-6 xlarge-6",
+				img: "img/general/gibridnye-krossovye.jpg",
+				heading: "Горные велосипеды",
+				text: "",
+				href: "#"
+			})
+	.grid-container
+		.h2 Лидеры продаж
+		+slider(slider.homePagePopular,'js-main-page-popular-slider slider--products')
+			block sliderRaw
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Велосипед Haibike Seet Hardnine 2.0",
+					priceOld: "15 344 грн",
+					priceNew: "13 042 грн",
+					text: "",
+					href: "#",
+					buttonText: "Купить"
+				})
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Велосипед Pride Rebel 7.3",
+					priceOld: "13 500 грн",
+					priceNew: "12 850 грн",
+					text: "",
+					href: "#",
+					buttonText: "Купить"
+				})
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Горные велосипеды",
+					priceOld: "16 000 грн",
+					priceNew: "14 500 грн",
+					text: "",
+					href: "#",
+					buttonText: "Купить"
+				})
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Горные велосипеды",
+					priceOld: "16 000 грн",
+					priceNew: "14 500 грн",
+					text: "",
+					href: "#",
+					buttonText: "Купить"
+				})
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Горные велосипеды",
+					priceOld: "16 000 грн",
+					priceNew: "14 500 грн",
+					text: "",
+					href: "#",
+					buttonText: "Купить"
+				})
+				+product-card({
+					cardClass: "product-card--slider",
+					img: "img/general/gornye-velosipedy.jpg",
+					heading: "Горные велосипеды",
+					priceOld: "16 000 грн",
+					priceNew: "14 500 грн",
+					text: "Продажа горных велосипедов Продажа горных велосипедов Продажа горных велосипедов Продажа горных велосипедов",
+					href: "#",
+					buttonText: "Купить"
+				})
+	hr
+	.grid-container
+		h2 Популярные велосипедные марки:
+		- var n = 0;
+		ul.grid-x
+			while n < 10
+				li.xlarge-4
+					+link('#','Велосипеды Apollo')
+					- n++
+	//script(src='js/separate-js/svg4everybody.min.js')
+	//script svg4everybody();
+

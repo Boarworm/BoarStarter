@@ -1,0 +1,46 @@
+// Common styles of the project
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: url("img/general/body-bg.png");
+  line-height: 1.231;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.wrappper {
+  background: #e3e3e3;
+  flex: 1;
+}
+
+.table-wrapper {
+  overflow: auto;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.content p:last-child {
+  margin-bottom: 0;
+}
+.container-1920{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+//.additional-nav{background: $color2};
+.sitemap-link {
+  color: $color-white;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.align-center {
+  margin: auto;
+}

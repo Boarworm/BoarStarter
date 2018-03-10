@@ -1,0 +1,46 @@
+{
+  "name": "boar_starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "chokidar": "^2.0.2",
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "gulp-fs": "0.0.2",
+    "gulp-twig": "^1.2.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-data": "^1.3.1",
+    "gulp-file-include": "^1.2.0",
+    "gulp-image": "^3.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^3.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-discard-comments": "^2.0.4",
+    "postcss-sorting": "^3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boarworm/BoarStarter.git"
+  },
+  "author": "Boarworm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boarworm/BoarStarter/issues"
+  },
+  "homepage": "https://github.com/Boarworm/BoarStarter#readme"
+}

@@ -1,0 +1,9 @@
+mixin checkbox(opt)
+	- var classes = opt.classes ? "checkbox " + opt.classes:"checkbox";
+	- var label = opt.label;
+	- var name = opt.name;
+	- var id = opt.id;
+
+	div(class=classes)
+		input.checkbox__input(type="checkbox" name=name id=id)
+		label.checkbox__label(for=id)=label

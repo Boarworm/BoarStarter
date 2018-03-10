@@ -1,0 +1,37 @@
+.cell.top-line
+	.grid-container.grid-x.align-justify.align-stretch.padding-vertical-1
+		+menu({
+			tag: "", menuClass: "menu--main", navClass: "", ulClass: "", liClass: "", liClassActive: "", aClass: ""
+		},
+		menu.mainMenu)
+		.cell.grid-x.shrink
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--top-line-favorite",
+				href: "",
+				text: "",
+				title: "Избранное",
+				iconClass: "fas fa-heart",
+				iconPosition: "left"
+			})
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--top-line-compare",
+				href: "",
+				text: "",
+				title: "Сравнить товары",
+				iconClass: "fas fa-flask",
+				iconPosition: "left"
+			})
+			+button({
+				tag: "",
+				type: "",
+				buttonClass: "button--top-line-cart",
+				href: "",
+				text: "Корзина",
+				title: "Корзина",
+				iconClass: "fa fa-shopping-cart",
+				iconPosition: "left"
+			})

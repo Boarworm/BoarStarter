@@ -1,0 +1,13 @@
+mixin link-tel(opt)
+	- var tel = opt.tel;
+	- var title = opt.title;
+	- var linkClass = opt.linkClass ? "link-tel " + opt.linkClass:"link-tel";
+	- var iconClass = opt.iconClass ? "link-tel__icon " + opt.iconClass:"link-tel__icon";
+
+	- var regex = /-|\s|\(|\)/g;
+	- var telHref = tel.replace(regex, "");
+
+	a(class=linkClass href="tel:" + telHref title=title)
+		if iconClass
+			span(class=iconClass)
+		=tel

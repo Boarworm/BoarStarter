@@ -1,0 +1,40 @@
+.slider-with-nav {
+}
+
+.slider-with-nav-main {
+  background-color: #1A7FB8;
+}
+
+.slide-with-nav-main {
+  &:focus {
+    outline: none;
+  }
+  &:hover{
+
+  }
+  &__img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+.slider-with-nav-secondary {
+}
+
+.slide-with-nav-secondary {
+  &:focus {
+    outline: none;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  &__img-container {
+  }
+  &__img {
+  }
+}

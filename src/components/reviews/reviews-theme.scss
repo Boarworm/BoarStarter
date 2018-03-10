@@ -1,0 +1,11 @@
+.reviews {
+  &:hover, &:focus{
+    color: $color-blue-800;
+  }
+  &__icon {
+    color: $color-blue-600;
+  }
+  &__count {
+    color: $color-blue-600;
+  }
+}

@@ -59,41 +59,71 @@
   }
   // Button mods
   &--top-line-favorite {
-background-color: transparent;
-    &:hover{
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    &:hover {
       background-color: transparent;
       color: $color-red-400;
+      box-shadow: 0 0 0 33px #f5f5f5 inset;
+      border-radius: 62px;
     }
   }
   &--top-line-compare {
-background-color: transparent;
-    &:hover{
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    &:hover {
       background-color: transparent;
       color: $color-red-400;
+      box-shadow: 0 0 0 33px #f5f5f5 inset;
+      border-radius: 62px;
     }
   }
   &--top-line-cart {
- background-color: transparent;
-    &:hover{
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    &:hover {
       background-color: transparent;
       color: $color-red-400;
+      box-shadow: 0 0 0 33px #f5f5f5 inset;
+      border-radius: 62px;
     }
   }
-  &--product-card-favorite{
+  &--product-card-favorite {
     position: absolute;
     top: 0;
     right: 30px;
-    background: none;
     color: #f27573;
-    padding: 5px 0 0 0;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    &:hover {
+      color: $color-white;
+      box-shadow: 0 0 0 33px #ef5350 inset, 0 0 0 0px #ef5350;
+      border-radius: 62px;
+    }
   }
-  &--product-card-compare{
+  &--product-card-compare {
     position: absolute;
     top: 0;
     right: 0px;
-    background: none;
     color: #f27573;
-    padding: 5px 0 0 0;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    &:hover {
+      background-color: transparent;
+      color: $color-white;
+      box-shadow: 0 0 0 33px #ef5350 inset, 0 0 0 0px #ef5350;
+      border-radius: 62px;
+    }
+  }
+  &--footer-social{
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
   }
 }
 

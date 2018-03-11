@@ -2,7 +2,7 @@
     "menu": {
         "mainMenu": {
             "item1": {
-                "href": "#", "text": "Главная", "title": "Главная", "current": "", "childs": {
+                "href": "index.html", "text": "Главная", "title": "Главная", "current": "", "childs": {
                 }
             }, "item2": {
                 "href": "#", "text": "Оплата и доставка", "title": "Оплата и доставка", "childs": {
@@ -126,6 +126,23 @@
         "index" : {
             "title" : "Главная страница",
             "useSocialMetaTags": true
+        }
+    },
+    "breadcrumbs": {
+        "crumb1": {
+            "text":"Главная",
+            "title":"Главная",
+            "current":""
+        },
+        "crumb2": {
+            "text":"Горные велосипеды",
+            "title":"Горные велосипеды",
+            "current":""
+        },
+        "crumb3": {
+            "text":"Spelli xs-2200",
+            "title":"Spelli xs-2200",
+            "current":"1"
         }
     }
 }

@@ -23,9 +23,9 @@ mixin product-card(opt)
 						buttonClass: "button--product-card-favorite",
 						href: "",
 						text: "",
-						title: "Избранное",
-						iconClass: "fas fa-heart",
-						iconPosition: "left"
+						title: "Добавить в избранное",
+						iconClass: "fa fa-heart",
+						iconPosition: ""
 					})
 					+button({
 						tag: "",
@@ -34,15 +34,15 @@ mixin product-card(opt)
 						href: "",
 						text: "",
 						title: "Добавить к сравнению",
-						iconClass: "fas fa-flask",
-						iconPosition: "left"
+						iconClass: "fa fa-balance-scale",
+						iconPosition: ""
 					})
 				.product-card__price
 					.product-card__price-old()=priceOld
 					.product-card__price-new()=priceNew
 			.product-card__rating
-				+rating-stars({classes:"m-b-10", starsCount : "5",starsActive:"2",starIcon:"fas fa-star",starIconActive:"far fa-star",title:"Оценка"})
-				+reviews({classes:"m-b-10", icon : "fas fa-comment",href:"#",count:"4",text:"отзыва"})
+				+rating-stars({classes:"m-b-10", starsCount : "5",starsActive:"2",starIcon:"fa fa-star",starIconActive:"fa fa-star-o",title:"Оценка"})
+				+reviews({classes:"m-b-10", icon : "fa fa-comment",href:"#",count:"4",text:"отзыва"})
 			+label({labelClass:"label--product-card",href:"#",text:"Скидка -42%"})
 			+button({
 				tag: "",

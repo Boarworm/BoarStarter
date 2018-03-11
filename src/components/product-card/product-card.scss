@@ -18,12 +18,14 @@
     padding: 10px 5px 0 5px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
   }
   &__heading {
     font-size: 18px;
     text-align: center;
     margin: 0 0 10px 0;
     color: $color-grey-800;
+    flex-grow: 1;
     &:hover{
       text-decoration: underline;
       color: $color-blue-700;

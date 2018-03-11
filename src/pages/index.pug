@@ -1,6 +1,6 @@
 extends layout.pug
 block main
-	+slider(slider.homePageMainSlider,'js-main-page-slider')
+	+slider(slider.homePageMainSlider,'js-main-page-slider slider slider--fullwidth slider--home')
 	.grid-container
 		.content.m-t-20.m-b-20
 			p "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -8,123 +8,99 @@ block main
 	.container-1920
 		.align-justify.grid-x
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/gornye-velosipedy.jpg",
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/gornye-velosipedy.png",
 				heading: "Горные велосипеды",
 				text: "",
-				href: "#"
+				href: "category.html"
 			})
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/velosipedy-kross-kantri.jpg",
-				heading: "Горные велосипеды",
-				text: "",
-				href: "#"
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/velosipedy-kross-kantri.png",
+				heading: "Велосипеды кросс-кантри",
+				text: "Кросс-ка́нтри (англ. cross-country) — одна из спортивных дисциплин в маунтинбайке (горном велосипеде), гонки по пересечённой местности со спусками, затяжными подъёмами, скоростными и техническими участками.",
+				href: "category.html"
 			})
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/nainery-29-dyuimov.jpg",
-				heading: "Горные велосипеды",
-				text: "",
-				href: "#"
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/nainery-29-dyuimov.png",
+				heading: "Найнеры (29 дюймов)",
+                text: "Кросс-ка́нтри (англ. cross-country) — одна из спортивных дисциплин в маунтинбайке (горном велосипеде), гонки по пересечённой местности со спусками, затяжными подъёмами, скоростными и техническими участками.",
+                href: "category.html"
 			})
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/gibridnye-krossovye.jpg",
-				heading: "Горные велосипеды",
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/gibridnye-krossovye.png",
+				heading: "Гибридные кроссовые",
 				text: "",
-				href: "#"
+				href: "category.html"
 			})
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/gornye-velosipedy.jpg",
-				heading: "Горные велосипеды",
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/dvuhpodvesy.png",
+				heading: "Двухподвесы",
 				text: "",
-				href: "#"
+				href: "category.html"
 			})
 			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/velosipedy-kross-kantri.jpg",
-				heading: "Горные велосипеды",
+				cardClass: "cell medium-12 xlarge-8",
+				img: "img/general/velosipedy/gorodskie-velosipedy.png",
+				heading: "Городскиен велосипеды",
 				text: "",
-				href: "#"
-			})
-			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/nainery-29-dyuimov.jpg",
-				heading: "Горные велосипеды",
-				text: "",
-				href: "#"
-			})
-			+category-card({
-				cardClass: "cell medium-6 xlarge-6",
-				img: "img/general/gibridnye-krossovye.jpg",
-				heading: "Горные велосипеды",
-				text: "",
-				href: "#"
+				href: "category.html"
 			})
 	.grid-container
 		.h2 Лидеры продаж
-		+slider(slider.homePagePopular,'js-main-page-popular-slider slider--products')
+		+slider(slider.homePagePopular,'js-main-page-popular-slider slider slider--products')
 			block sliderRaw
 				+product-card({
 					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Велосипед Haibike Seet Hardnine 2.0",
-					priceOld: "15 344 грн",
-					priceNew: "13 042 грн",
+					img: "img/content/velosipedy/cannondale/cannondale-catalyst-2-2017.jpg",
+					heading: "Велосипед Cannondale Catalyst 2 2017",
+					priceOld: "13 645 грн",
+					priceNew: "12 746 грн",
 					text: "",
-					href: "#",
+					href: "product.html",
 					buttonText: "Купить"
 				})
 				+product-card({
 					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Велосипед Pride Rebel 7.3",
-					priceOld: "13 500 грн",
-					priceNew: "12 850 грн",
+                    img: "img/content/velosipedy/cannondale/cannondale-catalyst-2-2018.jpg",
+                    heading: "Велосипед Cannondale Catalyst 2 2018",
+					priceOld: "",
+					priceNew: "15 936 грн",
 					text: "",
-					href: "#",
+					href: "product.html",
 					buttonText: "Купить"
 				})
 				+product-card({
 					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Горные велосипеды",
-					priceOld: "16 000 грн",
-					priceNew: "14 500 грн",
+                    img: "img/content/velosipedy/cannondale/cannondale-trail-6.jpg",
+                    heading: "Велосипед Cannondale Trail 6",
+					priceOld: "",
+					priceNew: "20 972 грн",
 					text: "",
-					href: "#",
+					href: "product.html",
 					buttonText: "Купить"
 				})
 				+product-card({
 					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Горные велосипеды",
-					priceOld: "16 000 грн",
-					priceNew: "14 500 грн",
+                    img: "img/content/velosipedy/cannondale/cannondale-trail-7.jpg",
+                    heading: "Велосипед Cannondale Trail 7",
+					priceOld: "",
+					priceNew: "19 012 грн",
 					text: "",
-					href: "#",
+					href: "product.html",
 					buttonText: "Купить"
 				})
 				+product-card({
 					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Горные велосипеды",
-					priceOld: "16 000 грн",
-					priceNew: "14 500 грн",
+					img: "img/content/velosipedy/cannondale/cannondale-trail-7.jpg",
+					heading: "Велосипед Cannondale Trail 7",
+					priceOld: "",
+					priceNew: "19 012 грн",
 					text: "",
-					href: "#",
-					buttonText: "Купить"
-				})
-				+product-card({
-					cardClass: "product-card--slider",
-					img: "img/general/gornye-velosipedy.jpg",
-					heading: "Горные велосипеды",
-					priceOld: "16 000 грн",
-					priceNew: "14 500 грн",
-					text: "Продажа горных велосипедов Продажа горных велосипедов Продажа горных велосипедов Продажа горных велосипедов",
-					href: "#",
+					href: "product.html",
 					buttonText: "Купить"
 				})
 	hr

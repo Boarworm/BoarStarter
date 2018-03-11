@@ -10,7 +10,7 @@ mixin button(opt)
 
 
 	#{tag}(type=(type ? type : null) class=buttonClass+iconPosition href=(href ? href : null) title=(title ? title : null))
-		if (iconClass && iconPosition)
+		if (iconClass)
 			i(class=iconClass)
 		=text
 

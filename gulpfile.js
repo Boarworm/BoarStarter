@@ -179,7 +179,7 @@ gulp.task('html:compile', function () {
 // ---------------------------------------------------
 gulp.task('img:compress', function () {
     return gulp.src(paths.images.src)
-        //.pipe(changed(paths.images.dist))
+        .pipe(changed(paths.images.dist))
         .pipe(image())
         .pipe(gulp.dest(paths.images.dist));
 });

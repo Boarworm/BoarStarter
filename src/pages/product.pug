@@ -1,0 +1,39 @@
+extends layout.pug
+block main
+	.grid-container
+		+breadcrumbs({
+            breadcrumbsClass: "", delimeter: "", delimeterClass: "fa fa-angle-right"
+        },
+        breadcrumbs)
+		.main
+			main.main-content
+				h1.h1 Велосипед Haibike Seet Hardline 2.0 2017
+				div
+					| Код товара: 24-367096
+					+rating-stars({
+                        starsCount: "5",
+                        starsActive: "2",
+                        starIcon: "fas fa-star",
+                        starIconActive: "far fa-star",
+                        title: "Оценка"
+                    })
+					+reviews({icon: "fas fa-comment", href: "#", count: "4", text: "отзыва"})
+				.grid-x.grid-margin-x
+					.cell.width-100
+						+slider(slider.homePageMainSlider,'js-main-page-slider product-slider')
+					.cell
+						include ../components/product-params/product-params
+						include ../components/product-buy/product-buy
+						include ../components/quick-order/quick-order
+				.h3 Основные преимущества
+				- var i = 0;
+				while i < 6
+					ul
+						li
+							| <strong>Кассета на шлицах.</strong> Прослужит намного дольше, чем устаревшее резьбовое крепление, и позволит использовать кассету (звезды) любого уровня. Такая втулка однозначная необходимость в современных велосипедах.
+					- i++;
+				.h3 Характеристики
+				+table({
+                    classes: ""
+                },
+                table)

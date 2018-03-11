@@ -152,7 +152,7 @@ $(function () {
         dots: false,
         infinite: true,
         speed: 300,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
     });
 }); // end ready
@@ -178,7 +178,7 @@ $(function () {
 }); //end ready
 $(function () {
     const toTopBtn = $('.js-to-top-btn');
-    let topOffset;
+    var topOffset;
     toTopBtn.fadeOut(0);
     toTopBtn.click(function () {
         // скорость скролла

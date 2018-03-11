@@ -9,4 +9,5 @@ mixin category-card(opt)
 		a.category-card__img-container(href=href title=heading)
 			img.category-card__img(src=img alt=heading title=heading)
 		a.category-card__heading(href=href title=heading)=heading
-		.category-card__text=text
+		if text
+			.category-card__text=text

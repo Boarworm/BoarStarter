@@ -15,12 +15,11 @@
     padding: 6px 10px;
 
     color: $color-white;
-    &:hover {
-
+    &:hover, &:focus {
+      background-color: $color-grey-100;
+      color: $color-green-400;
     }
-    &:focus {
 
-    }
   }
   &__child-ul {
 

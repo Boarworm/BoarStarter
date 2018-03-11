@@ -1,9 +1,13 @@
 .category-card {
-  background-color: $color-white;
-  box-shadow: 0 0 2px 0px #e3e3e3;
+  $c: &;
+  background-color: $color-grey-100;
+  box-shadow: 0 0 0px 1px $color-grey-300;
   transition: 0.2s;
+  position:relative;
+  overflow: hidden;
   &__img-container {
-
+transition: 0.5s;
+    top: 0;
   }
   &__img {
 
@@ -14,11 +18,38 @@
     color: $color-grey-500;
   }
   &__text {
-
+    background-color:$color-green-400;
+    position:absolute;
+    top:100%;
+    transition: 0.3s;
+    &:before{
+      content:'\f106';
+      display:flex;
+      background-color:$color-grey-300;
+      width:50px;
+      height:25px;
+      font-size: 24px;
+      color: $color-white;
+      border-radius:50px 50px 0 0;
+      justify-content:center;
+      align-items:center;
+      font-family:fontawesome;
+      position:absolute;
+      left:0;
+      right:0;
+      margin:auto;
+      bottom:100%;
+    }
   }
 
   &:hover, &:focus {
-    box-shadow: 0 0 7px 3px $color-grey-700;
     z-index: 1;
+    #{$c}__text{
+      top:40%;
+      height: 100%;
+    }
+    #{$c}__img-container{
+      top:-30%;
+    }
   }
 }

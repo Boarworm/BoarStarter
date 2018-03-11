@@ -19,6 +19,8 @@
   &__a {
     transition: 0.3s;
     text-align: center;
+    display: flex;
+    align-items: center;
     &:hover + .menu__child-ul{
         display: flex;
       }
